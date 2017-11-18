@@ -1,0 +1,15 @@
+.idea
+*.iml
+target
+backend/*.iml
+**/backend/target/
+frontend/*.iml
+**/frontend/target/
+**/frontend/src/main/ng-validation/node
+**/frontend/src/main/ng-validation/node_modules
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
