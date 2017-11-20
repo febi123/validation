@@ -22,9 +22,10 @@ public class Todo {
     @Indexed(unique=true)
     private String title;
 
-    private Boolean completed = false;
+    private Boolean completed;
 
-    private Date createdAt = new Date();
+    private Date createdAt;
+
 
     public Todo() {
         super();
@@ -33,6 +34,7 @@ public class Todo {
     public Todo(String title) {
         this.title = title;
     }
+
 
     public String getId() {
         return id;
