@@ -1,0 +1,14 @@
+<div class="pagination" *ngIf="count > 0">
+
+        <div class="text-uppercase text-muted fs-12">
+        	<div class="description">
+				<span class="page-counts">{{ getMin() }} - {{ getMax() }} of {{ count }}</span>
+			</div>
+        </div>
+        <div>
+        	<ngb-pagination [collectionSize]="count" [maxSize]="5" [pageSize]="perPage" [rotate]="true" [(page)]="page" (pageChange)="onPage($event)"  ></ngb-pagination>
+    	</div>
+
+
+</div>
+

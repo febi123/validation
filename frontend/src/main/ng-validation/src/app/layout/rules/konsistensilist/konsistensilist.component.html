@@ -1,0 +1,39 @@
+<div class="card mb-3">
+    <div class="card-header">
+        Metadata
+    </div>
+    <div class="card-body table-responsive">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Field</th>
+                <th>Rule</th>
+                <th>Pesan Error</th>
+                <th>Perlakuan</th>
+                <th>Level</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let konsis of konsistensi" [class.completed]= "konsistensi.completed === true" >
+                <td>{{konsis.field}}</td>
+                <td>{{konsis.rule}}</td>
+                <td>{{konsis.message}}</td>
+                <td>{{konsis.perlakuan}}</td>
+                <td>{{konsis.level}}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+
+<my-pagination
+  (goPage)="goToPage($event)"
+  (goNext)="onNext()"
+  (goPrev)="onPrev()"
+  [pagesToShow]="3"
+  [page]="page"
+  [perPage]="limit"
+  [count]="total">
+</my-pagination>

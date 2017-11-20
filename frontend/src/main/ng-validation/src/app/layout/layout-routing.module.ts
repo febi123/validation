@@ -8,6 +8,8 @@ const routes: Routes = [
         component: LayoutComponent,
         children: [
             { path: '', redirectTo: 'dashboard' },
+            { path: 'rules', loadChildren: './rules/rules.module#RulesModule' },
+            { path: 'metadata', loadChildren: './metadata/metadata.module#MetadataModule' },
             { path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardModule' },
             { path: 'charts', loadChildren: './charts/charts.module#ChartsModule' },
             { path: 'tables', loadChildren: './tables/tables.module#TablesModule' },

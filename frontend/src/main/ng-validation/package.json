@@ -26,6 +26,8 @@
     "@ngx-translate/http-loader": "^2.0.0",
     "chart.js": "^2.7.1",
     "core-js": "^2.5.1",
+    "d3-hypergraph": "^1.0.0",
+    "d3-ng2-service": "^1.22.1",
     "font-awesome": "^4.7.0",
     "ng2-charts": "^1.6.0",
     "rxjs": "^5.5.2",
