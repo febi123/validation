@@ -3,6 +3,7 @@
 target
 backend/*.iml
 **/backend/target/
+**/backend/data/
 frontend/*.iml
 **/frontend/target/
 **/frontend/src/main/ng-validation/node
